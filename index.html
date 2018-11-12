@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="contentWrapper">
+        <div class="container text-center">
+                <h1>Marvel Characters</h1>
+                <input id="search" type="text">
+        </div> 
+        <div class="btnHolder">
+            <button id="next" class="notBlock">Next page</button>
+            <button id="prev" class="notBlock">Previous page</button>
+        </div>
+        <div id="js-pagination" class="text-center">
+        </div>
+    </div>
+    <div id="loader" class="none">
+        <img src="loader.gif"  alt="">
+    </div>
+    <div class="container js-contentWrapper" id="content">
+    </div>
+    <div class="modalWrapper js-content">		
+    </div>
+    <div class="js-listWrapper notBlock">
+        <ul class="list"></ul>
+    </div>
+    <script src="favourite.js"></script>
+    <script src="modal.js"></script>
+    <script src="superhero.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
